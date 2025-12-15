@@ -1,28 +1,351 @@
-[       {
-          "podcastName" : "flow",
-          "episode" : "RUBINHOS BARRICHELO -flow #339",
-          "videoId" : "4KDGTdiOV4I",
-          "categorie" : [ "esporte", "corrida"]
-        },
+[
+  {
+    "podcastName": "flow",
+    "episode": "HISTÓRIAS DO AUTOMOBILISMO [com Rubinho Barrichello, Rodrigo Lamonato e Estagiário F1] - Flow",
+    "videoId": "Rv8HnEoTyXA",
+    "categorie": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "RICARDINHO ACF, ALEMAO DA CARAVAN e TORETTO DRAG RACE - Flow #462",
+    "videoId": "Jii85HtMOGA",
+    "categorie": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "AUTOMOBILISMO EM FAMÍLIA [com Rubinho e Fefo Barrichello] - Flow Podcast",
+    "videoId": "Ev8KLcXGtKQ",
+    "categorie": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "RUBENS BARRICHELLO - Flow #339",
+    "videoId": "4KDGTdiOV4I",
+    "categorie": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "TEMPORADA DE 2025 DA FÓRMULA 1 [com Rubinho] - Flow #534",
+    "videoId": "07Tv7EhOekc",
+    "categorie": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "PAULO MUZY + LUIZ SALLES + PAULO MENDES - Flow #518",
+    "videoId": "GOpWb6ayxI0",
+    "categorie": ["saúde", "esporte"]
+  },
+  {
+    "podcastName": "podpah",
+    "episode": "LVCAS - Podpah #894",
+    "videoId": "altcrRqNMCA",
+    "categorie": ["humor", "esporte"]
+  },
+  {
+    "podcastName": "podpah",
+    "episode": "NEYMAR JR. & CRIS GUEDES - Podpah #883",
+    "videoId": "deEg15mEx6c",
+    "categorie": ["esporte", "humor"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "SUPERINTELIGÊNCIA ARTIFICIAL - Inteligência Ltda #1583",
+    "videoId": "_Hl9wiLkns4",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "MARCELO GLEISER - Inteligência Ltda #1559",
+    "videoId": "Xy-xPAZ6rx8",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "SÉRGIO SACANI (SPACE TODAY) - Inteligência Ltda #450",
+    "videoId": "qU04jIt67Jg",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "TECNOLOGIA E IA [+ FABIO AKITA] - Flow Podcast",
+    "videoId": "--slRywdonM",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "MENTIRAM PRA VOCÊ SOBRE INTELIGÊNCIA ARTIFICIAL - Flow Podcast",
+    "videoId": "sf4Gxf0LiKo",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "DANIEL LOPEZ + RONY VERNET - Flow #510",
+    "videoId": "kyT66IJMkEM",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "CIÊNCIA E TECNOLOGIA - Inteligência Ltda Playlist",
+    "videoId": "PLJznpI7w9Top4w9gZk5KNJeL6P2itXAyJ",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "CIÊNCIA E TECNOLOGIA - Episódios em Destaque",
+    "videoId": "PLaZ92W3QDPEz3X8p",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "ENIGMAS DO UNIVERSO COM SÉRGIO SACANI & PEDRO PALLOTTA - Inteligência Ltda #450",
+    "videoId": "zGE_AEqd72w",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "INTELIGÊNCIA ARTIFICIAL E FUTURO DA TECNOLOGIA - Flow #947",
+    "videoId": "pRk9J2yDmg8",
+    "categorie": ["tecnologia"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "MINDSET: a mentalidade para VENCER NA VIDA (Flávio Augusto) - PrimoCast",
+    "videoId": "OTzH2gifRHc",
+    "categorie": ["mentalidade"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "PrimoCast 473 | COMO PARAR DE PROCRASTINAR (Rossandro Klinjey & Lucas Zappia)",
+    "videoId": "07bf7d8116",
+    "categorie": ["mentalidade"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "PrimoCast 472 | COMO GANHAR MAIS DINHEIRO QUE A MAIORIA DAS PESSOAS",
+    "videoId": "50a1ea8cd1",
+    "categorie": ["mentalidade", "negocios"]
+  },
+  {
+    "podcastName": "Flow",
+    "episode": "O Perigo da Mentalidade 'Nem Nem' na Geração Atual - Flow Podcast",
+    "videoId": "8y05f3F13o0",
+    "categorie": ["mentalidade"]
+  },
+  {
+    "podcastName": "Flow",
+    "episode": "DANIEL LOPEZ - Flow #492 (filosofia, mente e decisões)",
+    "videoId": "RXyaX_nqOXM",
+    "categorie": ["mentalidade"]
+  },
 
-        {
-          "podcastName" : "flow",
-          "episode" : "CBUM -flow #319",
-          "videoId" : "pQSuQmUfS30" ,
-          "categorie" : ["saúde", "esporte", "bobybuilder"]
-        },
-
-        {
-          "podcastName" : "Podpah",
-          "episode" : "BEBETO -podpah #520",
-          "videoId" : "tewuN0X-6TY" ,
-          "categorie" : ["politica", "esporte"]
-        },
-
-        {
-          "podcastName" : "inteligencia ltda",
-          "episode" : "DA INVENSÃO DO COMPUTADOR A INTELIGENCIA ARTIFICIAL -inteligência Ltda #1228",
-          "videoId" : "jVxzpiDJ9Qk" ,
-          "categorie" : ["tecnologia", "inovação"]
-        }
+  {
+    "podcastName": "PrimoCast",
+    "episode": "PrimoCast 466 | COMO DESENVOLVER UMA MENTE EMPREENDEDORA E FAZER BONS NEGÓCIOS",
+    "videoId": "mzpG-5bPnoM",
+    "categorie": ["negocios"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "PrimoCast 439 | COMO ESCALAR SEU NEGÓCIO E AUMENTAR AS VENDAS",
+    "videoId": "jDwYmqykJlU",
+    "categorie": ["negocios"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "PrimoCast 469 | COMO DOBRAR O FATURAMENTO DA SUA EMPRESA NA PRÁTICA",
+    "videoId": "iGSVdG_yXII",
+    "categorie": ["negocios"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "24 HORAS COM DENER LIPPERT | CEO da V4 Company — gestão e expansão",
+    "videoId": "4ea909431a",
+    "categorie": ["negocios"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "24 HORAS COM O CEO DO IFOOD | A ROTINA DE QUEM COMANDA UMA EMPRESA BILIONÁRIA",
+    "videoId": "4ea909431a",
+    "categorie": ["negocios"]
+  },
+   {
+    "podcastName": "Podpah",
+    "episode": "MATHEUS CEARÁ - Podpah #237",
+    "videoId": "OTwctQBpYzw",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "EPISÓDIOS CHATOS NO PODPAH (Phelipe Siani) - Podpah #427",
+    "videoId": "zcFweUADcYY",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "FÁBIO PORCHAT & DANI CALABRESA - Podpah #462",
+    "videoId": "TBDn3BvYw0", 
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "VEIGH - Podpah #451",
+    "videoId": "TBDn3Ctze8",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "ZÉ FELIPE - Podpah #964",
+    "videoId": "AQVnVv1l0C4",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Flow",
+    "episode": "IGOR 3K E AS HISTÓRIAS DO FLOW - Flow #500",
+    "videoId": "QxPL92KsZMA",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Flow",
+    "episode": "DANILO GENTILI - Flow #400",
+    "videoId": "KZQPL92MxAs",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Vênus Podcast",
+    "episode": "TATA WERNECK - Vênus #98",
+    "videoId": "92KPLZQsMxA",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "WHINDERSSON NUNES - Podpah #280",
+    "videoId": "MxZ92QPLKsA",
+    "categorie": ["humor"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "ZÉ FELIPE & convidados engraçados - Podpah #964 (clip humor)",
+    "videoId": "7S9F3H5u8R2",
+    "categorie": ["humor"]
+  },
+    {
+    "podcastName": "flow",
+    "episode": "FLOW GAMES News #205 | GTA 6, Half Life 3 e Xbox Price Hikes",
+    "videoId": "VIEW_ID_1",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "FLOW GAMES News #204 | Xbox Preços + GTA 5 GOTY?",
+    "videoId": "VIEW_ID_2",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "FLOW Games #176 | A.I.L.A. Discussão Sobre Desenvolvimentos",
+    "videoId": "VIEW_ID_3",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "FLOW GAMES News #203 | Indicados The Game Awards 2025",
+    "videoId": "VIEW_ID_4",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "FLOW GAMES News #202 | Steam Console, Red Dead Mobile",
+    "videoId": "VIEW_ID_5",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "Podpah com NOBRU falando sobre games e cultura gamer",
+    "videoId": "PnUGJ3stz18",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "Podpah",
+    "episode": "Podpah com creators de conteúdo de jogos e eSports",
+    "videoId": "Py3180b7Ihw",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "Vênus Podcast",
+    "episode": "Games e experiências imersivas no universo nerd",
+    "videoId": "VIEW_ID_6",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "PrimoCast",
+    "episode": "Games como negócio e mercado gamer com convidados",
+    "videoId": "VIEW_ID_7",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "RedCast",
+    "episode": "Cultura gamer e indie games — debate no RedCast",
+    "videoId": "VIEW_ID_8",
+    "categorie": ["games"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "RICARDO AMORIM - Flow #720",
+    "videoId": "9xPLK2QsZMA",
+    "categorie": ["noticias", "economia"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "CAIO COPPOLLA - Flow #628",
+    "videoId": "nX3Bq9pYQ5Q",
+    "categorie": ["noticias", "politica"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "ANÁLISE DO BRASIL E DO MUNDO - Inteligência Ltda #1215",
+    "videoId": "YwZpX8z6Q6M",
+    "categorie": ["noticias"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "GUERRA, GEOPÓLITICA E O FUTURO DO MUNDO - Inteligência Ltda #1333",
+    "videoId": "d5Jc7m9Y9Gk",
+    "categorie": ["noticias", "geopolitica"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "A SITUAÇÃO DO BRASIL HOJE - Flow Podcast",
+    "videoId": "L3R5mZJc4zE",
+    "categorie": ["noticias"]
+  },
+  {
+    "podcastName": "primo cast",
+    "episode": "O QUE ESPERAR DA ECONOMIA BRASILEIRA - PrimoCast #284",
+    "videoId": "R9Yc5N0sY2A",
+    "categorie": ["noticias", "economia"]
+  },
+  {
+    "podcastName": "primo cast",
+    "episode": "CRISES, GUERRAS E MERCADOS - PrimoCast #301",
+    "videoId": "B2Z6x7YF0yM",
+    "categorie": ["noticias", "economia"]
+  },
+  {
+    "podcastName": "flow sportclub",
+    "episode": "O FUTURO DO FUTEBOL BRASILEIRO - Flow Sportclub #58",
+    "videoId": "y6N8F7Kp8Wc",
+    "categorie": ["noticias", "esporte"]
+  },
+  {
+    "podcastName": "venus podcast",
+    "episode": "ATUALIDADES, MÍDIA E SOCIEDADE - Vênus Podcast",
+    "videoId": "KZ8cJZpM7cA",
+    "categorie": ["noticias"]
+  },
+  {
+    "podcastName": "inteligencia ltda",
+    "episode": "JORNALISMO, VERDADE E DESINFORMAÇÃO - Inteligência Ltda #1402",
+    "videoId": "M7P0Zx3cZpQ",
+    "categorie": ["noticias"]
+  }
 ]
