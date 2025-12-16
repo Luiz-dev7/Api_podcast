@@ -1,34 +1,79 @@
-# API Podcast
+# 🎙️ Podcast Package Multimanage
 
-## Visão Geral
+## 📌 Visão Geral
 
-Esta API foi desenvolvida em **Node.js com TypeScript**, utilizando **apenas módulos nativos do Node (HTTP)**, sem frameworks como Express. O objetivo da aplicação é disponibilizar dados de podcasts e seus episódios, permitindo listagem geral e filtragem por categoria.
+O **Podcast Package Multimanage** é uma **API REST** desenvolvida em **Node.js com TypeScript**, inspirada em plataformas de streaming como **Netflix** e **HBO**. Seu objetivo é **centralizar, organizar e disponibilizar podcasts em formato de vídeo**, oferecendo dados estruturados para fácil consumo por aplicações **front-end web ou mobile**.
 
-O projeto segue uma organização em camadas (**controllers, services, repositories e utils**), promovendo clareza, separação de responsabilidades e fácil manutenção.
-
----
-
-## Tecnologias Utilizadas
-
-* Node.js (HTTP nativo)
-* TypeScript
-* dotenv
+A API trabalha exclusivamente com **HTTP nativo do Node.js**, sem o uso de frameworks, evidenciando o domínio do funcionamento interno da plataforma.
 
 ---
 
-## Configuração do Ambiente
+## 🎯 Objetivo do Projeto
 
-### Variáveis de Ambiente (.env)
+Fornecer uma API capaz de:
+
+* 📂 Listar episódios de podcasts
+* 🏷️ Organizar conteúdos por categorias
+* ⭐ Favoritar conteúdos desejado
+* 🔍 Filtrar episódios por nome do podcast
+* 🔗 Facilitar a integração com aplicações consumidoras
+
+Este projeto possui foco **educacional e profissional**, servindo como base para estudos de arquitetura de APIs e construção de portfólio.
+
+---
+
+## 🌐 Domínio da Aplicação
+
+* Podcasts em **formato de vídeo**
+* Conteúdos hospedados principalmente no **YouTube**
+* Organização por **categorias temáticas**
+
+---
+
+## 🚀 Funcionalidades
+
+* 📚 Listagem de episódios de podcasts
+* 🏷️ Classificação por categorias
+
+  * Exemplos:
+
+    * Mentalidade
+    * Humor
+    * Saúde
+    * Tecnologia
+    * Fitness
+    * Esporte
+* 🔍 Filtro de episódios pelo **nome do podcast**
+* 🖼️ Exibição de imagem de capa do episódio
+* 🔗 Acesso direto ao vídeo no YouTube
+* ⭐ Favoritar conteúdos que achar bom
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Node.js**
+* **TypeScript**
+* **HTTP nativo do Node**
+* Arquitetura **REST**
+* Retorno de dados em **JSON**
+* Uso de **dotenv** para variáveis de ambiente
+
+---
+
+## ⚙️ Configuração do Ambiente
+
+### Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 PORT=3333
 ```
 
-A porta configurada é utilizada pelo servidor HTTP no momento da inicialização.
-
 ---
 
-## Como Executar o Projeto
+## ▶️ Como Executar o Projeto
 
 ### Pré-requisitos
 
@@ -47,123 +92,91 @@ npm install
 npm run dev
 ```
 
-A API ficará disponível em:
+A API estará disponível em:
 
-```
+```text
 http://localhost:3333
 ```
 
 ---
 
-## Estrutura de Pastas
+## 🔌 Endpoints da API
 
+### 📍 Listar todos os episódios
+
+```http
+GET /api/list
 ```
-Api_podcast-main/
- ├── docs/
- │    ├── app.md
- │    └── assets/
- │         └── Sem título.png
- ├── src/
- │    ├── controllers/
- │    │    └── podcasts-controller.ts
- │    ├── models/
- │    │    ├── podcast-model.ts
- │    │    └── filter-model.ts
- │    ├── repositories/
- │    │    ├── podcast-repositore.ts
- │    │    └── podcast.json
- │    ├── routes/
- │    │    └── routes.ts
- │    ├── services/
- │    │    ├── listEpisodes.ts
- │    │    └── filterEpisodes.ts
- │    ├── utils/
- │    │    ├── content-type.ts
- │    │    ├── httpMethods.ts
- │    │    └── status-code.ts
- │    ├── app.ts
- │    └── server.ts
- ├── .env
- ├── package.json
- ├── tsconfig.json
- └── README.md
+
+📌 Retorna todos os episódios cadastrados.
+
+---
+
+### 🔍 Filtrar episódios por podcast
+
+```http
+GET /api/episode?p=flow
+```
+
+📌 Retorna apenas os episódios do podcast informado via **query string**.
+
+---
+
+### ⭐ Favoritar um episódio
+
+```http
+POST /api/favorite
+```
+
+📌 Adiciona um episódio à lista de favoritos do usuário.
+
+#### Body (JSON)
+
+```json
+{
+  "podcastName": "flow",
+  "episode": "CBUM - Flow #319",
+  "videoId": "pQSuQmUfS30"
+}
+```
+
+#### Response (201)
+
+```json
+{
+  "status": "success",
+  "message": "Episódio favoritado com sucesso"
+}
 ```
 
 ---
 
-## Arquitetura da Aplicação
+### ❌ Remover episódio dos favoritos
 
-### server.ts
+```http
+DELETE /api/favorite?videoId=pQSuQmUfS30
+```
 
-Responsável por criar e iniciar o servidor HTTP, lendo a porta definida no `.env`.
-
-### app.ts
-
-Centraliza a lógica principal da aplicação, integrando as rotas e controlando o fluxo das requisições.
-
-### routes
-
-Define as rotas disponíveis e faz o direcionamento para os controllers adequados.
-
-### controllers
-
-Recebem as requisições HTTP, tratam os parâmetros e retornam as respostas apropriadas.
-
-### services
-
-Contêm a lógica de negócio da aplicação, como listagem e filtragem de episódios.
-
-### repositories
-
-Responsáveis pelo acesso aos dados, que neste projeto são armazenados em um arquivo JSON.
-
-### utils
-
-Conjunto de utilitários usados em toda a aplicação, incluindo:
-
-* Definição de métodos HTTP
-* Content-Type das respostas
-* Padronização de códigos de status HTTP
-
----
-
-## Endpoints
-
-### 🔹 Listar todos os episódios
-
-**GET** `/episodes`
-
-Retorna todos os episódios de podcasts cadastrados.
+📌 Remove um episódio da lista de favoritos.
 
 #### Response (200)
 
 ```json
 {
   "status": "success",
-  "data": [
-    {
-      "podcastName": "Nome do Podcast",
-      "episode": "Nome do Episódio",
-      "videoId": "abc123",
-      "categories": ["tecnologia", "backend"]
-    }
-  ]
+  "message": "Favorito removido com sucesso"
 }
 ```
 
 ---
 
-### 🔹 Filtrar episódios por categoria
+### 📌 Listar episódios favoritados
 
-**GET** `/episodes?category=backend`
+```http
+GET /api/favorites
+```
 
-Retorna apenas os episódios que pertencem à categoria informada.
-
-#### Parâmetros de Query
-
-| Nome     | Tipo   | Obrigatório | Descrição             |
-| -------- | ------ | ----------- | --------------------- |
-| category | string | Sim         | Categoria do episódio |
+📌 Retorna todos os episódios favoritados.
 
 #### Response (200)
 
@@ -174,58 +187,142 @@ Retorna apenas os episódios que pertencem à categoria informada.
 }
 ```
 
-#### Response (404)
+---
 
-```json
-{
-  "status": "error",
-  "message": "Nenhum episódio encontrado"
-}
+### 🔍 Filtrar episódios por podcast
+
+```http
+GET /api/episode?p=flow
 ```
+
+📌 Retorna apenas os episódios do podcast informado via **query string**.
+
+#### Parâmetros de Query
+
+| Parâmetro | Tipo   | Obrigatório | Descrição       |
+| --------- | ------ | ----------- | --------------- |
+| p         | string | Sim         | Nome do podcast |
 
 ---
 
-## Modelos de Dados
-
-### PodcastModel
+## 📦 Estrutura de Dados (Exemplo de Retorno)
 
 ```ts
-{
-  podcastName: string;
-  episode: string;
-  videoId: string;
-  categories: string[];
-}
+[
+  {
+    podcastName: "flow",
+    episode: "RUBINHOS BARRICHELO - Flow #339",
+    videoId: "4KDGTdiOV4I",
+    cover: "https://i.ytimg.com/vi/4KDGTdiOV4I/maxresdefault.jpg",
+    link: "https://www.youtube.com/watch?v=4KDGTdiOV4I",
+    categorie: ["esporte", "corrida"]
+  },
+  {
+    podcastName: "flow",
+    episode: "CBUM - Flow #319",
+    videoId: "pQSuQmUfS30",
+    cover: "https://i.ytimg.com/vi/pQSuQmUfS30/maxresdefault.jpg",
+    link: "https://www.youtube.com/watch?v=pQSuQmUfS30",
+    categorie: ["saúde", "esporte", "bodybuilder"]
+  }
+]
 ```
 
-### FilterModel
+---
+
+## 🧠 Funcionamento Interno (Core da Aplicação)
+
+A aplicação utiliza o módulo **HTTP nativo do Node.js** para roteamento e controle de requisições:
 
 ```ts
-{
-  category: string;
-}
+import { getFilterEpisodes, getListEpisodes } from "./controllers/podcasts-controller";
+import { routes } from "./routes/routes";
+import { HttpMethod } from "./utils/httpMethods";
+import * as http from "http";
+
+export const app = async (
+  request: http.IncomingMessage,
+  response: http.ServerResponse
+) => {
+  // Exemplo de query string:
+  // http://localhost:3333/api/episode?p=flow
+
+  const baseUrl = request.url?.split("?")[0];
+
+  if (request.method === HttpMethod.GET && baseUrl === routes.LIST) {
+    await getListEpisodes(request, response);
+  }
+
+  if (request.method === HttpMethod.GET && baseUrl === routes.episode) {
+    await getFilterEpisodes(request, response);
+  }
+};
 ```
 
 ---
 
-## Boas Práticas Utilizadas
+## 📁 Organização do Projeto
 
-* Uso de TypeScript com tipagem explícita
-* Separação clara de responsabilidades
-* Uso de HTTP nativo para melhor entendimento do core do Node.js
-* Organização modular do projeto
+```
+Api_podcast-main/
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── README.md
+├── docs/
+│   ├── api.md
+│   ├── app.md
+│   └── assets/
+│       ├── Sem título.png
+│       └── novos serviços arch.png
+└── src/
+    ├── app.ts               # Núcleo da aplicação (roteamento HTTP)
+    ├── server.ts            # Inicialização do servidor HTTP
+    ├── controllers/
+    │   └── podcasts-controller.ts
+    ├── routes/
+    │   └── routes.ts
+    ├── services/
+    │   ├── listEpisodes.ts      # Listagem de episódios
+    │   ├── filterEpisodes.ts    # Filtro de episódios
+    │   ├── favorite-ep.ts       # Adição de episódio aos favoritos
+    │   ├── delete-favorite.ts   # Remoção de favoritos
+    │   └── List-favorites.ts    # Listagem de favoritos
+    ├── repositories/
+    │   ├── podcast.json         # Base de dados de podcasts
+    │   └── usuarios.json        # Base de dados de usuários
+    |   └── Favoritos.json       # Base de dados dos Favoritos
+    └── utils/
+        ├── content-type.ts
+        ├── httpMethods.ts
+        └── status-code.ts
+
+
 
 ---
 
-## Possíveis Evoluções
+ 🔮 Roadmap (Próximas Evoluções)
 
-* Implementação de documentação Swagger/OpenAPI
-* Paginação de resultados
-* Testes automatizados
-* Persistência em banco de dados
+- 🏷️ Busca e filtro por categorias
+- 📱 Integração com aplicações front-end (React / React Native)
+- 📑 Documentação Swagger / OpenAPI
 
 ---
 
-## Considerações Finais
+✅ Funcionalidades Já Implementadas
 
-Este projeto demonstra domínio do funcionamento interno do Node.js, sem dependência de frameworks, sendo adequado tanto para fins acadêmicos quanto para portfólio profissional.
+- 📚 Listagem de episódios
+- 🔍 Filtro de episódios por podcast
+- ⭐ Sistema de favoritos (adicionar, listar e remover)
+- 🖼️ Exibição de capa e link do vídeo
+
+
+---
+
+ 📄 Licença
+
+Este projeto é de uso livre para **fins educacionais e aprendizado**, podendo ser adaptado e expandido conforme necessidade.
+
+```
