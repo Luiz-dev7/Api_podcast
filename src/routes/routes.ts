@@ -1,6 +1,7 @@
 export enum routes {
     LIST = "/api/list",
-    episode = "/api/episode"
+    episode = "/api/episode",
+    favorite = "/api/favoritos"
 }
 
 

@@ -1,4 +1,4 @@
-# 🎙️ Podcast Multimanage
+# 🎙️ Podcast Package Multimanager
 
 ## 📌 Visão Geral
 

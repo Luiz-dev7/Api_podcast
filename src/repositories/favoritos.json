@@ -1,0 +1,16 @@
+{
+  "favoritos": [
+    {
+      "usuarioId": 1,
+      "videoId": "jVxzpiDJ9Q"
+    },
+    {
+      "usuarioId": 2,
+      "videoId": "LuKIHNbmkp4"
+    },
+    {
+      "usuarioId": 3,
+      "videoId": "ctWl5-aYPKU"
+    }
+  ]
+}

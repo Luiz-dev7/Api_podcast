@@ -1,4 +1,4 @@
-import {  getFilterEpisodes, getListEpisodes  } from "./controllers/podcasts-controller"
+import {  addFavorite, getFilterEpisodes, getListEpisodes, listFavorites, removeFavorite  } from "./controllers/podcasts-controller"
 import { routes } from "./routes/routes";
 import { HttpMethod } from "./utils/httpMethods";
 import * as http from "http";
@@ -18,6 +18,21 @@ export const app = async (request: http.IncomingMessage, response: http.ServerRe
     // filtrar episodeo
     if (request.method === HttpMethod.GET && baseUrl === routes.episode){
         await getFilterEpisodes(request, response);
+    }
+
+     // adicionar favorito
+     if (request.method === HttpMethod.POST && baseUrl === routes.favorite) {
+        await addFavorite(request, response);
+    }
+
+    // lista no episodio favorito
+    if(request.method === HttpMethod.GET && baseUrl === routes.favorite){
+        await listFavorites(request, response)
+    }
+
+    
+    if(request.method === HttpMethod.DELETE && baseUrl === routes.favorite){
+        await removeFavorite(request, response)
     }
 
 }
